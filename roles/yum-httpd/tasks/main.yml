@@ -1,0 +1,16 @@
+---
+- name: Downloading Ansible SELinux module dependencies
+  yum:
+    name: libselinux-python
+    state: present
+- name: Disabling SELinux
+  selinux:
+    state: disabled
+- name: Downloading HTTP/Apache2 Daemon
+  yum:
+    name: httpd
+    state: latest
+- name: Configuring HTTP/Apache2 Service
+  systemd:
+    name: httpd
+    state: restarted

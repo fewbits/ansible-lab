@@ -1,0 +1,9 @@
+---
+- name: Creating User
+  user:
+    name: "{{ user_name }}"
+    password: "{{ user_password }}"
+    home: "{{ user_home }}"
+    shell: "{{ user_shell }}"
+    comment: "{{ user_description }}"
+    state: present

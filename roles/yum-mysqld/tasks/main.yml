@@ -1,0 +1,16 @@
+---
+- name: Downloading Ansible SELinux module dependencies
+  yum:
+    name: libselinux-python
+    state: present
+- name: Disabling SELinux
+  selinux:
+    state: disabled
+- name: Downloading MariaDB/MySQL Daemon
+  yum:
+    name: mariadb-server
+    state: latest
+- name: Configuring MariaDB/MySQL Service
+  systemd:
+    name: mariadb
+    state: restarted

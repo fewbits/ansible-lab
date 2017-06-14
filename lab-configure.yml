@@ -1,0 +1,19 @@
+---
+- hosts: all
+  vars:
+    user_name: admin
+    user_password: admin123
+    user_home: /home/admin
+    user_shell: /bin/bash
+    user_description: Conta Administrativa
+    repo_name: https://github.com/fewbits/ansible-lab.git
+    repo_dest: /home/admin/ansible-lab
+  roles:
+    - system-user-add
+    - git-pull
+- hosts: web-servers
+  roles:
+    - yum-httpd
+- hosts: database-servers
+  roles:
+    - yum-mysqld

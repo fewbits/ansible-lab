@@ -1,0 +1,7 @@
+---
+- name: Downloading Git Repository
+  git:
+    repo: "{{ repo_name }}"
+    dest: "{{ repo_dest }}"
+    force: yes
+    update: yes
