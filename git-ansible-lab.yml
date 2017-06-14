@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+  - name: Downloading Git Repository
+    git:
+      repo: https://github.com/fewbits/ansible-lab.git
+      dest: /tmp/ansible-lab
