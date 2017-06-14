@@ -1,0 +1,3 @@
+vm-ansible-01 ansible_host=127.0.0.1 ansible_port=7122 ansible_user=root
+vm-ansible-02 ansible_host=127.0.0.1 ansible_port=7222 ansible_user=root
+vm-ansible-03 ansible_host=127.0.0.1 ansible_port=7322 ansible_user=root
