@@ -77,7 +77,8 @@ três vezes no ícone *"+"*;
   a terceira VM;
   * **Guest IP**: O IP da máquina virtual;
   * **Guest Port**: 22;
-1. Pronto. O laboratório já está criado, e você pode prosseguir para o próximo
+
+Pronto. O laboratório já está criado, e você pode prosseguir para o próximo
 tópico da documentação.
 ________________________________________________________________________________
 
