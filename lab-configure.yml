@@ -2,7 +2,7 @@
 - hosts: all
   vars:
     user_name: admin
-    user_password: admin123
+    user_password: admin12345
     user_home: /home/admin
     user_shell: /bin/bash
     user_description: Conta Administrativa

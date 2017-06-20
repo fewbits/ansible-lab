@@ -1,5 +1,6 @@
 ---
 - name: Downloading Ansible SELinux module dependencies
+  when: "{{ ansible_os_family == 'RedHat' }}"
   yum:
     name: libselinux-python
     state: present
@@ -7,8 +8,9 @@
   selinux:
     state: disabled
 - name: Downloading MariaDB/MySQL Daemon
+  when: "{{ ansible_os_family == 'RedHat' }}"
   yum:
-    name: mariadb-server
+    name: httpd
     state: latest
 - name: Configuring MariaDB/MySQL Service
   systemd:
