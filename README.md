@@ -70,13 +70,13 @@ clique em *"NatNetwork"*;
 1. Na janela *Port Forwarding Rules*, em *IPv4*, adicione três regras clicando
 três vezes no ícone *"+"*;
 1. Preencha cada uma das três regras da seguinte forma:
-* **Name**: Nome da máquina virtual
-* **Protocol**: TCP
-* **Host IP**: 127.0.0.1
-* **Host Port**: 7122 para a primeira VM; 7222 para a segunda VM; 7322 para
-a terceira VM;
-* **Guest IP**: O IP da máquina virtual;
-* **Guest Port**: 22;
+  * **Name**: Nome da máquina virtual
+  * **Protocol**: TCP
+  * **Host IP**: 127.0.0.1
+  * **Host Port**: 7122 para a primeira VM; 7222 para a segunda VM; 7322 para
+  a terceira VM;
+  * **Guest IP**: O IP da máquina virtual;
+  * **Guest Port**: 22;
 1. Pronto. O laboratório já está criado, e você pode prosseguir para o próximo
 tópico da documentação.
 ________________________________________________________________________________
