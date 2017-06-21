@@ -22,6 +22,7 @@ host_vars/          | Diretório | Variávies aplicadas a hosts do inventário (
 roles/              | Diretório | Roles reutilizáveis do Ansible
 git-ansible-lab.yml | Arquivo   | Playbook básico: Faz o download deste repositório
 lab                 | Arquivo   | Arquivo de inventário
+lab-v1              | Arquivo   | Arquivo de inventário (compatibilidade com versões do Ansible inferiores à 2.0)
 lab-configure.yml   | Arquivo   | Playbook intermediário: Utiliza roles e variáveis
 README.md           | Arquivo   | Documentação do repositório (também conhecido como **este arquivo**)
 
@@ -116,6 +117,11 @@ comandos abaixo:
 1. `ssh -p 7122 root@127.0.0.1` (quando solicitado senha, digite **zxczxc**);
 1. `ssh -p 7222 root@127.0.0.1` (quando solicitado senha, digite **zxczxc**);
 1. `ssh -p 7322 root@127.0.0.1` (quando solicitado senha, digite **zxczxc**);
+
+> Atenção: Caso esteja utilizando uma versão do Ansible inferior à `2.0`,
+utilize o arquivo de inventário `lab-v1`. As versões mais antigas do Ansible
+utilizam uma nomenclatura de variáveis diferentes e, portanto, incompatível
+com o arquivo `lab` disponibilizado neste tutorial.
 ________________________________________________________________________________
 
 ## Utilizando o Repositório

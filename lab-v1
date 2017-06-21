@@ -1,0 +1,11 @@
+vm-ansible-01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=7122 ansible_ssh_user=root
+vm-ansible-02 ansible_ssh_host=127.0.0.1 ansible_ssh_port=7222 ansible_ssh_user=root
+vm-ansible-03 ansible_ssh_host=127.0.0.1 ansible_ssh_port=7322 ansible_ssh_user=root
+
+[web-servers]
+vm-ansible-01
+vm-ansible-03
+
+[database-servers]
+vm-ansible-02
+vm-ansible-03
